@@ -5,8 +5,9 @@ This program was part of my Master's of Engineering thesis at the University of 
 
 [The Application of the Object Oriented Programming Paradigm In Developing Structural Engineering Computer programs](https://drive.google.com/file/d/1K8eX76825fJd8Y4yKsxIHGSn5zcTPYPX/view)
 
+GraphISEP One was developed in 1990 with `Think C with Objects` and the `Think Class Library`. It is about 22,000 lines of code (not including the Class Library).
 
-GraphISEP One was developed in 1990 with `Think C with Objects` and the `Think Class Library`.
+GrahpISEP One allowed the user of the application to layout and design structural wood trusses connected with Gusset Plates (with spikes) - the same as those used in residential and light commercial floor and roof trusses. GraphISEP One communicated with a backend Fortran program that crunched the number to validate that the trusses were sound for the given load applied on them (such as floor, snow, wind loads, etc...). 
 
 `Think C with Objects` was the first incarnation of `Objective-C` and eventually became [Symantec C++ with the Think Class Library (TCL)](https://en.wikipedia.org/wiki/THINK_C).
 
