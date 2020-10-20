@@ -8,7 +8,7 @@ This program was part of my Master's of Engineering thesis at the University of 
 
 GraphISEP One was developed in 1990 with `Think C with Objects` and the `Think Class Library`.
 
-`Think C with Objects` was the first incarnation of `Objective-C` and eventually became Symantec C++ with the Symantec Class Library.
+`Think C with Objects` was the first incarnation of `Objective-C` and eventually became [Symantec C++ with the Think Class Library (TCL)](https://en.wikipedia.org/wiki/THINK_C).
 
 This was my first massive body of work before graduating and becoming an engineer then a programmer.
 
