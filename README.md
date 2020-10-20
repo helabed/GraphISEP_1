@@ -19,4 +19,8 @@ We kept track of changes mentally and backed up our application folder/directory
 
 Chapter 3 and 4 of my Master's Thesis (above) have a gazzillion screenshots of how GraphISEP One worked. And the class names in the thesis match those in the code of this project.
 
+Chapter 5 of my Master's Thesis (above) gives an overview of how the `Direct Stiffness Method` can be used to gather the Global Stiffness and Global Forces matrices and calculate the displacement matrix and thus the stresses applied on the structure (wood truss in this case).
+
+The `Direct Stiffness Method (DSM)` is a specialized/simplified version of the `Finite Element Analysis (FEA)` method when using beams, columns and trusses where the axial, shear and flexural behavior(moments) of such elements is more predictable than the 2-Dimensional plates and 3-Dimensional generic elements used by FEA.
+
 Enjoy !
