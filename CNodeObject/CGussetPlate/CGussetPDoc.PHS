@@ -1,0 +1,17 @@
+/* #include "MacHeaders"*/
+#include <Global.h>
+#include <Commands.h>
+#include <CApplication.h>
+#include <CBartender.h>
+#include <CDataFile.h>
+#include <CDecorator.h>
+#include <CDesktop.h>
+#include <CError.h>
+#include <CPanorama.h>
+#include <CScrollPane.h>
+#include <TBUtilities.h>
+#include "TrussCommands.h"
+#include "DHTypes.h"
+#include "DialogHandlerHeader.h"
+#include "CGussetPane.h"
+

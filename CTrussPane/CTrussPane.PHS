@@ -1,0 +1,5 @@
+/* #include "MacHeaders"*/
+#include "CTrussPane.h"
+#include "DHTypes.h"
+#include "DialogHandlerHeader.h"
+#include "CQuadrelateralObject.h"

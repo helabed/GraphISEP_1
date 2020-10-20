@@ -1,0 +1,8 @@
+/* #include "MacHeaders"*/
+#include <CCluster.h>
+#include <CObject.h>
+#include <CDocument.h>
+#include <CBureaucrat.h>
+#include "TrussCommands.h"
+#include "CClusterOfAbstracts.h"
+

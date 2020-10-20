@@ -1,0 +1,7 @@
+/* #include "MacHeaders"*/
+#include <Commands.h>
+#include "TrussCommands.h"
+#include <CBartender.h>
+#include "CTrussApp.h"
+#include "CTrussDoc.h"
+

@@ -1,0 +1,164 @@
+**************************************************************************
+CPointObject
+
+Its Instance variables
+
+  Point    itshitPt;    /* the hit point of the mouse */
+
+**************************************************************************
+CClusterOfObjects
+
+Its Instance variables
+
+  CPointObject  *thePointObject;  /*the reference to a CPointObject */
+
+Inherited Instance variables
+from CCluster:
+
+  short    blockSize;        /* Number of slots to allocate when */
+                    /*  more space is needed      */
+  short    slots;          /* Total number of slots allocated  */
+  LongHandle  items;          /* Items in the cluster        */
+
+Inherited Instance variables
+from CCollection:
+
+  long    numItems;        /* Number of items in collection  */
+
+**************************************************************************
+CTrussPane
+
+Its instance variables
+
+  CClusterOfObjects  *ObjectsCluster;
+
+Inherited Instance
+variables from
+CPanorama:
+
+  Rect     bounds;        /* Bounds defining Pane coordinates  */
+  short    hScale;          /* Pixels per horizontal unit    */
+  short    vScale;          /* Pixels per vertical unit      */
+  Point    position;        /* Location of frame in Panorama  */
+  Point    savePosition;      /* Save for later restoration    */
+  struct CScrollPane  *itsScrollPane;  /* Scroll pane for this Panorama  */
+
+Inherited Instance
+variables from
+CPane:
+
+  short       width;        /* Horizontal size in pixels    */
+  short       height;      /* Vertical size in pixels      */
+  short       hEncl;        /* Horizontal location in enclosure  */
+  short       vEncl;        /* Vertical location in enclosure  */
+  SizingOption   hSizing;      /* Horizontal sizing option      */
+  SizingOption   vSizing;      /* Vertical sizing option      */
+  Boolean       autoRefresh;    /* Refresh all after a resize?    */
+  Rect       frame;        /* Area for displaying the Pane    */
+                    /*   which defines Frame coords    */
+  Rect       aperture;      /* Active drawing area of the Pane  */
+  long       hOrigin;      /* Window left in Frame coords    */
+  long       vOrigin;      /* Window top in Frame coords    */
+  CEnvironment   *itsEnvironment;  /* Drawing environment        */
+  ClipOption     printClip;      /* Clipping option when printing  */
+  Boolean       printing;      /* Is printing in progress?      */
+
+Inherited Instance
+variables from
+CView:
+
+  GrafPtr    macPort;           /* Mac drawing port for the image  */
+  CView      *itsEnclosure;  /* Enclosing view          */
+  CList      *itsSubviews;    /* Views within this view      */
+  Boolean    visible;           /* Is the view visible?        */
+  Boolean    active;             /* Is the view active?        */
+  Boolean    wantsClicks;      /* Does view handle mouse clicks?  */
+
+Inherited Instance
+variables from
+CBureaucrat:
+
+  CBureaucrat    *itsSupervisor;    /* Its boss in the command chain  */
+**************************************************************************
+CTrussDoc
+
+Its Instance variables:
+
+    /* no instance variables */
+
+Inherited Instance
+variablses from
+CDocument:
+
+  CPane      *itsMainPane;
+  CFile      *itsFile;
+  CTask      *lastTask;
+  Boolean      undone;        /* Has last task been undone?    */
+  struct CPrinter  *itsPrinter;
+  Boolean      dirty;        /* Has the document changed?    */
+  short      pageWidth;
+  short      pageHeight;
+
+
+
+Inherited Instance
+variablses from
+CDirector:
+
+  CWindow    *itsWindow;        /* Window which object directs    */
+  Boolean    active;          /* Is the Director active?      */
+  CBureaucrat  *itsGopher;        /* Bureaucrat to make the Gopher  */
+                    /*   when Director is activated    */
+
+Inherited Instance
+variables from
+CBureaucrat:
+
+  CBureaucrat    *itsSupervisor;    /* Its boss in the command chain  */
+**************************************************************************
+CTrussApp
+
+Its Instance variables:
+
+  /* No instance variables */
+
+Inherited Instance
+variables from
+CApplication:
+
+  CSwitchboard  *itsSwitchboard;  /* Retrieves and processes events  */
+  CCluster    *itsDirectors;    /* Supervisors for windows      */
+  CList      *itsIdleChores;    /* Chores to perform at idle time  */
+  CCluster    *itsUrgentChores;  /* Chores to perform ASAP      */
+  Boolean      urgentsToDo;    /* Are any urgent chores pending?  */
+  Boolean      running;      /* Status flag            */
+                  /** Rainy day memory reserve **/
+  Size      rainyDayFund;    /* Bytes of memory to set aside    */
+  Handle      rainyDay;      /* Handle to the reserve memory    */
+  Boolean      rainyDayUsed;    /* Has rainy day fund been tapped?  */
+  Boolean      memWarningIssued;  /* Has user been alerted?      */
+  Size      creditLimit;    /* Max request without approval    */
+  Boolean      loanApproved;    /* Is memory request approved?    */
+  Boolean      canFail;      /* OK for memory request to fail?  */
+                  /** Standard Get File Paramaters **/
+  short      sfNumTypes;      /* Number of file types recognized  */
+  SFTypeList    sfFileTypes;    /* File types which are recognized  */
+  ProcPtr      sfFileFilter;    /* Filter for files to display    */
+  ProcPtr      sfGetDLOGHook;    /* Hook for handling get dialog    */
+  short      sfGetDLOGid;    /* Dialog resource ID for get file  */
+  ProcPtr      sfGetDLOGFilter;  /* Filter for get dialog events    */
+                  /** Stack Environment for LongJump **/
+  JumpBuffer    eventLoopJump;
+
+
+
+Inherited Instance
+variables from
+CBureaucrat:
+
+  CBureaucrat    *itsSupervisor;    /* Its boss in the command chain  */
+**************************************************************************
+
+
+
+

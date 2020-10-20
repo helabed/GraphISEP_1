@@ -1,0 +1,11 @@
+/* #include "MacHeaders"*/
+#include <CBartender.h>
+#include "DHTypes.h"
+#include "DialogHandlerHeader.h"
+#include "CTrussElementObject.h"
+#include "CClusterOfNodes.h"
+#include "CTrussPane.h"
+#include "CGussetPane.h"
+#include "CGussetPDoc.h"
+#include "CApplication.h"
+

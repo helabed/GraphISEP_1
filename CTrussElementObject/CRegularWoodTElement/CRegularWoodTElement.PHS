@@ -1,0 +1,15 @@
+/* #include "MacHeaders"*/
+#include "DHTypes.h"
+#include "DialogHandlerHeader.h"
+#include "CTrussElementObject.h"
+#include <CBartender.h>
+#include "CClustOfConcLoadsAndMoments.h"
+#include "CClustOfContLoadsAndMoments.h"
+#include "CClusterOfNodes.h"
+#include <math.h>
+#include "CTrussPane.h"
+#include "CRegularWoodTElement.h"
+#include "CGussetPlate.h"
+#include "CGussetPane.h"
+#include "CGussetPDoc.h"
+
